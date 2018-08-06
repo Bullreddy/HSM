@@ -12,6 +12,10 @@ router.get('/userProfile', (req, res)=>{
 })
 
 router.post('/userProfile', Authentication.updateProfile)
+router.get('/getdonationbystudent',Donations.getdonationbystudent )
+router.post('/adddonation',Donations.addDonation)
+router.put('/updatedonation',Donations.updateDonation)
+router.delete('/deletedonation',Donations.deleteDonation)
 
 
 router.get('/getdonations',Donations.getStudentList )

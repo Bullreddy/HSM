@@ -7,7 +7,11 @@ import {
     GET_USER_PROFILE,
     UPDATE_USER_PROFILE_GOOD,
     UPDATE_USER_PROFILE_FAIL ,
-    GET_DONATIONS
+    GET_DONATIONS,
+    GET_DONATION_PER_STUDENT,
+    ADD_DONATION,
+    UPDATE_DONATION,
+    DELETE_DONATION
 } from './types';
 const ROOT_URL = 'http://localhost:8000';
 
@@ -34,6 +38,36 @@ export function signUserIn(data) {
             });
     }
 }
+export function updateDonationData(donation){
+    
+    return function (dispatch) {
+        axios
+            .put(`/api/updatedonation`,donation)
+            .then(res => {
+                console.log(res)
+                dispatch({
+                    type: UPDATE_DONATION,
+                    payload: res
+                })
+            })
+            .catch(error => console.log(error));
+    }
+}
+export function deleteDonationData(donation){
+    
+    return function (dispatch) {
+        axios
+            .delete(`/api/deletedonation`,{params:{donationid:donation.donationid}})
+            .then(res => {
+                console.log(res)
+                dispatch({
+                    type: DELETE_DONATION,
+                    payload: res
+                })
+            })
+            .catch(error => console.log(error));
+    }
+}
 export function getDonationData(){
     return function (dispatch) {
         axios
@@ -48,6 +82,38 @@ export function getDonationData(){
             .catch(error => console.log(error));
     }
 }
+export function addDonation(donation){
+    return function (dispatch) {
+        // Submit email/password to server
+        axios
+            .post(`/api/adddonation`, donation)
+            .then(res => {
+                dispatch({type: ADD_DONATION,
+                    payload: res.data
+                     })
+                })
+            .catch(error => {
+                console.log(error);
+                dispatch({type: AUTH_ERROR, payload: 'Server Error, try later.'})
+            });
+    }
+}
+export function getDonationDataByStudent(student){
+    return function (dispatch) {
+        console.log(student)
+        axios
+            .get(`/api/getdonationbystudent`,{params:{id:student}})
+            .then(res => {
+                console.log(res)
+                dispatch({
+                    type: GET_DONATION_PER_STUDENT,
+                    payload: res.data
+                })
+            })
+            .catch(error => console.log(error));
+    }
+}
+
 export function signUserUp(userObj) {
     return function (dispatch) {
         // Submit email/password to server

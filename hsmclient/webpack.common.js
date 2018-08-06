@@ -23,6 +23,11 @@ module.exports = {
                 loader: 'babel-loader'
             },
             {
+                test: /\.css$/,  
+                include: path.resolve(__dirname, "node_modules"), 
+                loaders: ['style-loader', 'css-loader'],
+           },
+            {
                 test: /\.s?css$/,
                 exclude: path.resolve(__dirname, "node_modules"),
                 use: ExtractTextPlugin.extract({

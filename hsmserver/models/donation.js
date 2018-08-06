@@ -3,19 +3,14 @@ import mongoose from 'mongoose';
 
 // Define the model
 const DonationSchema = new mongoose.Schema({
-   
-    id: {
-        type: String,
+    donationid:{
         unique: true,
-        lowercase: true
-    }, name: {
-        type: String,
-        lowercase: true
+        type:Number
     },
-    studentId:{
-        type: String,
-        lowercase: true
-    }
+    createdby: String,
+    studentid:Number,
+    donationamount:Number,
+    createddate:Date
     
 })
 

@@ -11,6 +11,7 @@ export default function(ComposedComponent) {
     }
 
     componentWillUpdate(nextProps) {
+     
       if (!nextProps.authenticated) {
         this.context.router.history.push('/signin');
       }
@@ -22,6 +23,8 @@ export default function(ComposedComponent) {
   }
 
   function mapStateToProps({auth}) {
+    console.log(auth)
+    
     return { authenticated: auth.authenticated };
   }
   Authentication.contextTypes = {
