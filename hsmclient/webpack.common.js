@@ -12,7 +12,7 @@ module.exports = {
             'axios', 'prop-types' ]
     },
     output: {
-        path: path.resolve(__dirname, '../docs/'),
+        path: path.resolve(__dirname, '../client_PROD/'),
         filename: "js/[name].[chunkhash].js"
     },
     module: {

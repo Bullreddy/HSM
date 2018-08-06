@@ -12,6 +12,9 @@ const app = express();
 console.log(process.env.MONGODB_URI)
 console.log(process.env.JWT_SECRET)
 
+
+app.use(express.static("../client_PROD"));
+
 // DB Setup
 const MONGOURL = process.env.MONGODB_URI || 'mongodb://localhost/hsm';
 

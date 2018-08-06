@@ -1,0 +1,926 @@
+body {
+  background-color: white; }
+  body .cointainer {
+    padding: 10px;
+    padding-top: 30px; }
+  body nav .navbar-toggler {
+    outline: none;
+    border: none; }
+  body .row {
+    margin: 0px 0px; }
+  body .col, body .col-1, body .col-10, body .col-11, body .col-12, body .col-2, body .col-3, body .col-4, body .col-5, body .col-6, body .col-7, body .col-8, body .col-9, body .col-auto, body .col-lg, body .col-lg-1, body .col-lg-10, body .col-lg-11, body .col-lg-12, body .col-lg-2, body .col-lg-3, body .col-lg-4, body .col-lg-5, body .col-lg-6, body .col-lg-7, body .col-lg-8, body .col-lg-9, body .col-lg-auto, body .col-md, body .col-md-1, body .col-md-10, body .col-md-11, body .col-md-12, body .col-md-2, body .col-md-3, body .col-md-4, body .col-md-5, body .col-md-6, body .col-md-7, body .col-md-8, body .col-md-9, body .col-md-auto, body .col-sm, body .col-sm-1, body .col-sm-10, body .col-sm-11, body .col-sm-12, body .col-sm-2, body .col-sm-3, body .col-sm-4, body .col-sm-5, body .col-sm-6, body .col-sm-7, body .col-sm-8, body .col-sm-9, body .col-sm-auto, body .col-xl, body .col-xl-1, body .col-xl-10, body .col-xl-11, body .col-xl-12, body .col-xl-2, body .col-xl-3, body .col-xl-4, body .col-xl-5, body .col-xl-6, body .col-xl-7, body .col-xl-8, body .col-xl-9, body .col-xl-auto {
+    padding: 0px 0px; }
+  body button.btn {
+    cursor: pointer; }
+
+.bg-light {
+  background-color: #e6e7e8 !important; }
+
+.ReactTable {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.1); }
+
+.ReactTable * {
+  box-sizing: border-box; }
+
+.ReactTable .rt-table {
+  -webkit-box-flex: 1;
+  -ms-flex: auto 1;
+  flex: auto 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  width: 100%;
+  border-collapse: collapse;
+  overflow: auto; }
+
+.ReactTable .rt-thead {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.ReactTable .rt-thead.-headerGroups {
+  background: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+
+.ReactTable .rt-thead.-filters {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+
+.ReactTable .rt-thead.-filters input, .ReactTable .rt-thead.-filters select {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding: 5px 7px;
+  font-size: inherit;
+  border-radius: 3px;
+  font-weight: normal;
+  outline: none; }
+
+.ReactTable .rt-thead.-filters .rt-th {
+  border-right: 1px solid rgba(0, 0, 0, 0.02); }
+
+.ReactTable .rt-thead.-header {
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.15); }
+
+.ReactTable .rt-thead .rt-tr {
+  text-align: center; }
+
+.ReactTable .rt-thead .rt-th, .ReactTable .rt-thead .rt-td {
+  padding: 5px 5px;
+  line-height: normal;
+  position: relative;
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: inset 0 0 0 0 transparent; }
+
+.ReactTable .rt-thead .rt-th.-sort-asc, .ReactTable .rt-thead .rt-td.-sort-asc {
+  box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.6); }
+
+.ReactTable .rt-thead .rt-th.-sort-desc, .ReactTable .rt-thead .rt-td.-sort-desc {
+  box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.6); }
+
+.ReactTable .rt-thead .rt-th.-cursor-pointer, .ReactTable .rt-thead .rt-td.-cursor-pointer {
+  cursor: pointer; }
+
+.ReactTable .rt-thead .rt-th:last-child, .ReactTable .rt-thead .rt-td:last-child {
+  border-right: 0; }
+
+.ReactTable .rt-thead .rt-resizable-header {
+  overflow: visible; }
+
+.ReactTable .rt-thead .rt-resizable-header:last-child {
+  overflow: hidden; }
+
+.ReactTable .rt-thead .rt-resizable-header-content {
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.ReactTable .rt-thead .rt-header-pivot {
+  border-right-color: #f7f7f7; }
+
+.ReactTable .rt-thead .rt-header-pivot:after, .ReactTable .rt-thead .rt-header-pivot:before {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none; }
+
+.ReactTable .rt-thead .rt-header-pivot:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-left-color: #fff;
+  border-width: 8px;
+  margin-top: -8px; }
+
+.ReactTable .rt-thead .rt-header-pivot:before {
+  border-color: rgba(102, 102, 102, 0);
+  border-left-color: #f7f7f7;
+  border-width: 10px;
+  margin-top: -10px; }
+
+.ReactTable .rt-tbody {
+  -webkit-box-flex: 99999;
+  -ms-flex: 99999 1 auto;
+  flex: 99999 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: auto; }
+
+.ReactTable .rt-tbody .rt-tr-group {
+  border-bottom: solid 1px rgba(0, 0, 0, 0.05); }
+
+.ReactTable .rt-tbody .rt-tr-group:last-child {
+  border-bottom: 0; }
+
+.ReactTable .rt-tbody .rt-td {
+  border-right: 1px solid rgba(0, 0, 0, 0.02); }
+
+.ReactTable .rt-tbody .rt-td:last-child {
+  border-right: 0; }
+
+.ReactTable .rt-tbody .rt-expandable {
+  cursor: pointer;
+  text-overflow: clip; }
+
+.ReactTable .rt-tr-group {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch; }
+
+.ReactTable .rt-tr {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
+
+.ReactTable .rt-th, .ReactTable .rt-td {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 0px;
+  flex: 1 0 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 7px 5px;
+  overflow: hidden;
+  transition: .3s ease;
+  transition-property: width,min-width,padding,opacity; }
+
+.ReactTable .rt-th.-hidden, .ReactTable .rt-td.-hidden {
+  width: 0 !important;
+  min-width: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  opacity: 0 !important; }
+
+.ReactTable .rt-expander {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  color: transparent;
+  margin: 0 10px; }
+
+.ReactTable .rt-expander:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+  transform: translate(-50%, -50%) rotate(-90deg);
+  border-left: 5.04px solid transparent;
+  border-right: 5.04px solid transparent;
+  border-top: 7px solid rgba(0, 0, 0, 0.8);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer; }
+
+.ReactTable .rt-expander.-open:after {
+  -webkit-transform: translate(-50%, -50%) rotate(0);
+  transform: translate(-50%, -50%) rotate(0); }
+
+.ReactTable .rt-resizer {
+  display: inline-block;
+  position: absolute;
+  width: 36px;
+  top: 0;
+  bottom: 0;
+  right: -18px;
+  cursor: col-resize;
+  z-index: 10; }
+
+.ReactTable .rt-tfoot {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15); }
+
+.ReactTable .rt-tfoot .rt-td {
+  border-right: 1px solid rgba(0, 0, 0, 0.05); }
+
+.ReactTable .rt-tfoot .rt-td:last-child {
+  border-right: 0; }
+
+.ReactTable.-striped .rt-tr.-odd {
+  background: rgba(0, 0, 0, 0.03); }
+
+.ReactTable.-highlight .rt-tbody .rt-tr:not(.-padRow):hover {
+  background: rgba(0, 0, 0, 0.05); }
+
+.ReactTable .-pagination {
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 3px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  border-top: 2px solid rgba(0, 0, 0, 0.1); }
+
+.ReactTable .-pagination input, .ReactTable .-pagination select {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding: 5px 7px;
+  font-size: inherit;
+  border-radius: 3px;
+  font-weight: normal;
+  outline: none; }
+
+.ReactTable .-pagination .-btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 3px;
+  padding: 6px;
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.1);
+  transition: all .1s ease;
+  cursor: pointer;
+  outline: none; }
+
+.ReactTable .-pagination .-btn[disabled] {
+  opacity: .5;
+  cursor: default; }
+
+.ReactTable .-pagination .-btn:not([disabled]):hover {
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff; }
+
+.ReactTable .-pagination .-previous, .ReactTable .-pagination .-next {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: center; }
+
+.ReactTable .-pagination .-center {
+  -webkit-box-flex: 1.5;
+  -ms-flex: 1.5;
+  flex: 1.5;
+  text-align: center;
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.ReactTable .-pagination .-pageInfo {
+  display: inline-block;
+  margin: 3px 10px;
+  white-space: nowrap; }
+
+.ReactTable .-pagination .-pageJump {
+  display: inline-block; }
+
+.ReactTable .-pagination .-pageJump input {
+  width: 70px;
+  text-align: center; }
+
+.ReactTable .-pagination .-pageSizeOptions {
+  margin: 3px 10px; }
+
+.ReactTable .rt-noData {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.8);
+  transition: all .3s ease;
+  z-index: 1;
+  pointer-events: none;
+  padding: 20px;
+  color: rgba(0, 0, 0, 0.5); }
+
+.ReactTable .-loading {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  transition: all .3s ease;
+  z-index: -1;
+  opacity: 0;
+  pointer-events: none; }
+
+.ReactTable .-loading > div {
+  position: absolute;
+  display: block;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.6);
+  -webkit-transform: translateY(-52%);
+  transform: translateY(-52%);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+
+.ReactTable .-loading.-active {
+  opacity: 1;
+  z-index: 2;
+  pointer-events: all; }
+
+.ReactTable .-loading.-active > div {
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%); }
+
+.ReactTable .rt-resizing .rt-th, .ReactTable .rt-resizing .rt-td {
+  transition: none !important;
+  cursor: col-resize;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.crud-modal-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center; }
+
+.crud-modal-wrapper__background {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1000; }
+
+.crud-modal-wrapper__modal {
+  background-color: white;
+  border-radius: 5px;
+  z-index: 1001;
+  position: relative;
+  padding: 1rem;
+  margin: 3rem auto 0 auto;
+  top: 1rem;
+  display: inline-block; }
+
+.crud-modal-wrapper__title {
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: .8rem;
+  font-size: 1.3rem; }
+
+.crud-modal-form {
+  padding: 1rem; }
+
+.crud-modal-form__field-error {
+  color: #fff;
+  background-color: #e81b1b;
+  border-radius: 3px;
+  padding: .3rem .8rem;
+  text-align: left;
+  margin-bottom: .5rem;
+  position: relative;
+  margin-top: -0.6rem; }
+
+.crud-modal-form__field-error:before {
+  content: "";
+  background-color: transparent;
+  display: block;
+  position: absolute;
+  top: -.3rem;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #e81b1b; }
+
+.crud-modal-form__message {
+  padding: 0 0 1.2rem 0;
+  font-size: 1.1rem;
+  text-align: left; }
+
+.crud-modal-form__error-message {
+  background-color: #e81b1b;
+  color: #fff;
+  padding: .8rem;
+  border-radius: 3px;
+  margin-bottom: 1rem; }
+
+.crud-modal-form button {
+  margin-top: .5rem;
+  min-width: 250px; }
+
+.crud-modal-form input,
+.crud-modal-form select,
+.crud-modal-form textarea {
+  border-radius: 5px;
+  height: 30px;
+  border: 1px solid #ccc;
+  min-width: 250px;
+  margin-bottom: 1rem;
+  margin-top: .5rem;
+  padding-left: .6rem; }
+
+.crud-modal-form textarea {
+  min-height: 70px;
+  height: auto; }
+
+.crud-modal-form__label {
+  color: #000;
+  display: block;
+  text-align: left;
+  font-weight: 600; }
+
+.crud-button {
+  background-color: #000;
+  min-height: 1rem;
+  color: #fff;
+  border-radius: 3px;
+  padding: .6rem 1rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer; }
+
+.crud-button--circular {
+  border-radius: 50%;
+  padding: 0;
+  width: 2rem;
+  line-height: 2rem; }
+
+.crud-button--primary {
+  background-color: #2185d0; }
+
+.crud-button--primary:hover {
+  background-color: #1a6fb1;
+  transition: all 1s; }
+
+.crud-button--positive {
+  background-color: #21d05b; }
+
+.crud-button--positive:hover {
+  background-color: #1da54a;
+  transition: all 1s; }
+
+.crud-button--negative {
+  background-color: #f51010; }
+
+.crud-button--negative:hover {
+  background-color: #b80f0f;
+  transition: all 1s; }
+
+.crud-table {
+  background-color: transparent;
+  border: 1px solid rgba(52, 145, 238, 0.15);
+  border-collapse: collapse;
+  box-shadow: 2px 2px 5px 0 #c7c7c7; }
+
+.crud-table__header-cell {
+  cursor: pointer;
+  background: rgba(153, 158, 162, 0.05);
+  padding: .5rem 1rem;
+  color: rgba(0, 0, 0, 0.85);
+  border-left: 1px solid rgba(34, 36, 38, 0.1);
+  border-bottom: 1px solid rgba(34, 36, 38, 0.1); }
+
+.crud-table__body {
+  background-color: #fff; }
+
+.crud-table__cell {
+  background-color: white;
+  padding: .5rem 1rem;
+  border-left: 1px solid rgba(34, 36, 38, 0.1);
+  border-bottom: 1px solid rgba(4, 21, 37, 0.1); }
+
+.crud-table__cell-label {
+  display: none; }
+
+.crud-table__caption {
+  background-color: white;
+  padding: .8rem;
+  margin: 1rem 0;
+  box-shadow: 2px 2px 10px 0 #c7c7c7;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 600; }
+
+.crud-table-pagination {
+  display: block;
+  margin-top: 1rem;
+  margin: auto; }
+
+.crud-table-pagination::before {
+  content: "";
+  clear: both;
+  display: block;
+  margin-top: 2rem; }
+
+.crud-table-pagination__link,
+.crud-table-pagination__previous,
+.crud-table-pagination__next {
+  color: #000;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px 0 #c7c7c7;
+  border-radius: 2px; }
+
+.crud-table-pagination__link--active {
+  background-color: #2084e4;
+  color: #fff;
+  border: 1px solid #1a70c5; }
+
+.crud-table-pagination__link:hover,
+.crud-table-pagination__previous:hover,
+.crud-table-pagination__next:hover {
+  background-color: #3bbf5c;
+  color: #fff;
+  border-color: #28a93e; }
+
+.crud-table-query-builder {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: .2rem;
+  margin-bottom: 1rem;
+  box-shadow: 2px 2px 10px 0 #c7c7c7; }
+
+.crud-table-query-builder select,
+.crud-table-query-builder input {
+  border-radius: 5px;
+  height: 30px;
+  border: 1px solid #ccc;
+  min-width: 150px;
+  margin-bottom: 1rem;
+  margin-top: .5rem;
+  padding-left: .6rem; }
+
+.crud-table-query-builder input[type="checkbox"] {
+  margin-right: 15px;
+  margin-left: 15px;
+  vertical-align: middle; }
+
+.crud-label {
+  display: inline-block;
+  border: 1px solid #e5e5e5;
+  padding: .48rem 1rem;
+  border-radius: .2rem;
+  background-color: #f9fafb;
+  font-size: 1.1rem;
+  margin-right: .5rem;
+  margin-bottom: .7rem; }
+
+@media screen and (max-width: 600px) {
+  .crud-table {
+    display: block;
+    min-width: 85vw;
+    margin-top: 1rem;
+    border-radius: 3px;
+    overflow: hidden; }
+  .crud-table__row,
+  .crud-table__caption,
+  .crud-table__header,
+  .crud-table__body,
+  .crud-table__cell {
+    display: block;
+    width: 100%; }
+  .crud-table__caption {
+    margin: 0;
+    border-bottom: 1px solid #e6e6e6; }
+  .crud-table__header,
+  .crud-table__header-cell {
+    display: none; }
+  .crud-table__cell {
+    border-bottom: 0;
+    border-left: 0; }
+  .crud-table__cell:last-child {
+    padding-bottom: 2rem; }
+  .crud-table__row {
+    border-bottom: 1px solid #e6e6e6; }
+  .crud-table__row:not(:last-child) {
+    margin-bottom: 2rem; }
+  .crud-table__cell-label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-bottom: 1px dashed #e6e6e6;
+    padding: .5rem;
+    margin-bottom: .5rem;
+    background: rgba(184, 187, 189, 0.05); }
+  .crud-table-query-builder .crud-button--add {
+    margin: 0 auto 2rem auto;
+    display: block;
+    border-radius: 50%;
+    line-height: 3rem;
+    width: 3rem;
+    padding: 0;
+    font-size: 1.6rem; }
+  .crud-table-query-builder select,
+  .crud-table-query-builder input {
+    width: 100%;
+    margin-bottom: 0; } }
+
+/* Datetime picker style */
+/*!
+   * https://github.com/YouCanBookMe/react-datetime
+   */
+.rdt {
+  position: relative; }
+
+.rdtPicker {
+  display: none;
+  position: absolute;
+  width: 250px;
+  padding: 4px;
+  margin-top: 1px;
+  z-index: 99999 !important;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f9f9f9; }
+
+.rdtOpen .rdtPicker {
+  display: block; }
+
+.rdtStatic .rdtPicker {
+  box-shadow: none;
+  position: static; }
+
+.rdtPicker .rdtTimeToggle {
+  text-align: center; }
+
+.rdtPicker table {
+  width: 100%;
+  margin: 0; }
+
+.rdtPicker td,
+.rdtPicker th {
+  text-align: center;
+  height: 28px; }
+
+.rdtPicker td {
+  cursor: pointer; }
+
+.rdtPicker td.rdtDay:hover,
+.rdtPicker td.rdtHour:hover,
+.rdtPicker td.rdtMinute:hover,
+.rdtPicker td.rdtSecond:hover,
+.rdtPicker .rdtTimeToggle:hover {
+  background: #eeeeee;
+  cursor: pointer; }
+
+.rdtPicker td.rdtOld,
+.rdtPicker td.rdtNew {
+  color: #999999; }
+
+.rdtPicker td.rdtToday {
+  position: relative; }
+
+.rdtPicker td.rdtToday:before {
+  content: '';
+  display: inline-block;
+  border-left: 7px solid transparent;
+  border-bottom: 7px solid #428bca;
+  border-top-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: 4px;
+  right: 4px; }
+
+.rdtPicker td.rdtActive,
+.rdtPicker td.rdtActive:hover {
+  background-color: #428bca;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
+
+.rdtPicker td.rdtActive.rdtToday:before {
+  border-bottom-color: #fff; }
+
+.rdtPicker td.rdtDisabled,
+.rdtPicker td.rdtDisabled:hover {
+  background: none;
+  color: #999999;
+  cursor: not-allowed; }
+
+.rdtPicker td span.rdtOld {
+  color: #999999; }
+
+.rdtPicker td span.rdtDisabled,
+.rdtPicker td span.rdtDisabled:hover {
+  background: none;
+  color: #999999;
+  cursor: not-allowed; }
+
+.rdtPicker th {
+  border-bottom: 1px solid #f9f9f9; }
+
+.rdtPicker .dow {
+  width: 14.2857%;
+  border-bottom: none; }
+
+.rdtPicker th.rdtSwitch {
+  width: 100px; }
+
+.rdtPicker th.rdtNext,
+.rdtPicker th.rdtPrev {
+  font-size: 21px;
+  vertical-align: top; }
+
+.rdtPrev span,
+.rdtNext span {
+  display: block;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none; }
+
+.rdtPicker th.rdtDisabled,
+.rdtPicker th.rdtDisabled:hover {
+  background: none;
+  color: #999999;
+  cursor: not-allowed; }
+
+.rdtPicker thead tr:first-child th {
+  cursor: pointer; }
+
+.rdtPicker thead tr:first-child th:hover {
+  background: #eeeeee; }
+
+.rdtPicker tfoot {
+  border-top: 1px solid #f9f9f9; }
+
+.rdtPicker button {
+  border: none;
+  background: none;
+  cursor: pointer; }
+
+.rdtPicker button:hover {
+  background-color: #eee; }
+
+.rdtPicker thead button {
+  width: 100%;
+  height: 100%; }
+
+td.rdtMonth,
+td.rdtYear {
+  height: 50px;
+  width: 25%;
+  cursor: pointer; }
+
+td.rdtMonth:hover,
+td.rdtYear:hover {
+  background: #eee; }
+
+.rdtCounters {
+  display: inline-block; }
+
+.rdtCounters > div {
+  float: left; }
+
+.rdtCounter {
+  height: 100px; }
+
+.rdtCounter {
+  width: 40px; }
+
+.rdtCounterSeparator {
+  line-height: 100px; }
+
+.rdtCounter .rdtBtn {
+  height: 40%;
+  line-height: 40px;
+  cursor: pointer;
+  display: block;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none; }
+
+.rdtCounter .rdtBtn:hover {
+  background: #eee; }
+
+.rdtCounter .rdtCount {
+  height: 20%;
+  font-size: 1.2em; }
+
+.rdtMilli {
+  vertical-align: middle;
+  padding-left: 8px;
+  width: 48px; }
+
+.rdtMilli input {
+  width: 100%;
+  font-size: 1.2em;
+  margin-top: 37px; }
+
+@media (min-width: 768px) {
+  .modal-xl {
+    width: 70%;
+    margin: 0 auto; }
+  .crud-table {
+    width: 100%; }
+  .modal-dialog {
+    max-width: 100%;
+    margin: 0; } }
